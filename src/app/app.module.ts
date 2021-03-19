@@ -3,14 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
+import { RecipesModule } from './recipes/recipes.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    NavbarModule
+    NavbarModule,
+    RecipesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
