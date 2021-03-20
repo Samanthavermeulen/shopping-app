@@ -5,12 +5,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { NavbarComponent } from './navbar.component';
 import { RecipeListComponent } from '../recipes/recipe-list/recipe-list.component';
+import { HomeComponent } from '../home/home.component';
 
 
 
 
 
 const routes: Routes = [
+  { path: '', component: HomeComponent},
   { path: 'app-recipe-list', component: RecipeListComponent},
 ];
 
@@ -23,6 +25,6 @@ const routes: Routes = [
   exports:[
     NavbarComponent
   ],
-  declarations: [NavbarComponent]
+  declarations: [NavbarComponent, HomeComponent]
 })
 export class NavbarModule { }
